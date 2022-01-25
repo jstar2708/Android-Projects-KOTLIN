@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToe_Activity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIC_TAC_TOE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/tic_tac_toe"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginEnd="80dp"
+                style="@style/TicStyle"/>
+
+            <TextView
+                style="@style/TicStyle"
+                android:layout_marginEnd="80dp" />
+
+            <TextView
+                style="@style/TicStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TicStyle"
+                android:layout_marginEnd="80dp" />
+
+            <TextView
+                style="@style/TicStyle"
+                android:layout_marginEnd="80dp" />
+
+            <TextView
+                style="@style/TicStyle"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TicStyle"
+                android:layout_marginEnd="80dp" />
+
+            <TextView
+                style="@style/TicStyle"
+                android:layout_marginEnd="80dp" />
+
+            <TextView
+                style="@style/TicStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tic_tac_toe"
+        android:layout_marginTop="30dp"
+        android:text="Jaideep"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tic_tac_toe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:text="Jaideep"/>
+
+
+</RelativeLayout>

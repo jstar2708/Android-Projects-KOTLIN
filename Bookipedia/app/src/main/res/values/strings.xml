@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bookipedia</string>
+    <string name="search">Search</string>
+    <string name="getbooks">Get Books</string>
+    <string name="bookslist">Books List</string>
+    <string name="bookname">Book Title : </string>
+    <string name="bookauthor">Book Author : </string>
+    <string name="noBooks">No Books Found!</string>
+</resources>
