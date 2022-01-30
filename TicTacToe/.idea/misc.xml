@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/drawable-v24/circle2.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/drawable/circle.xml" value="0.19166666666666668" />
         <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.1431159420289855" />
+        <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.22" />
+        <entry key="..\:/Android Projects Kotlin/TicTacToe/app/src/main/res/layout/mylayout.xml" value="0.1453804347826087" />
       </map>
     </option>
   </component>

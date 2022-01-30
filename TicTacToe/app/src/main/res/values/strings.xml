@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
+    <string name="pos1">pos1</string>
+    <string name="zero"> 0</string>
+    <string name="ttt">TIC TAC TOE</string>
+    <string name="reset">Reset</string>
+    <string name="entername1">Enter Player 1 name</string>
+    <string name="entername2">Enter Player 2 name</string>
+    <string name="cont">Continue</string>
 </resources>

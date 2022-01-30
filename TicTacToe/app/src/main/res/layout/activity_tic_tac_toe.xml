@@ -4,100 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context=".TicTacToe_Activity">
 
     <TextView
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TIC_TAC_TOE"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/ttt"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textAlignment="center"/>
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
         android:id="@+id/tic_tac_toe"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_marginEnd="80dp"
-                style="@style/TicStyle"/>
-
-            <TextView
+                android:id="@+id/pos1"
                 style="@style/TicStyle"
-                android:layout_marginEnd="80dp" />
+                android:layout_weight="1"
+                android:onClick="pos1"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
 
             <TextView
-                style="@style/TicStyle"/>
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:id="@+id/pos2"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos2"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/pos3"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos3"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black" />
+
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/pos4"
                 style="@style/TicStyle"
-                android:layout_marginEnd="80dp" />
+                android:layout_weight="1"
+                android:onClick="pos4"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
 
             <TextView
-                style="@style/TicStyle"
-                android:layout_marginEnd="80dp" />
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
 
             <TextView
-                style="@style/TicStyle"/>
+                android:id="@+id/pos5"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos5"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/pos6"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos6"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black" />
+
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/pos7"
                 style="@style/TicStyle"
-                android:layout_marginEnd="80dp" />
+                android:layout_weight="1"
+                android:onClick="pos7"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
 
             <TextView
-                style="@style/TicStyle"
-                android:layout_marginEnd="80dp" />
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
 
             <TextView
-                style="@style/TicStyle"/>
+                android:id="@+id/pos8"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos8"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/pos9"
+                style="@style/TicStyle"
+                android:layout_weight="1"
+                android:onClick="pos9"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/p1_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tic_tac_toe"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
-        android:text="Jaideep"/>
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/p2_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tic_tac_toe"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
-        android:text="Jaideep"/>
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    ck"
+    android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@color/orange_700"
+        android:text="@string/reset" />
+
+    <ImageView
+        android:id="@+id/p1_chance"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/p1_name"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/p2_chance"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/p2_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp" />
 
 
 </RelativeLayout>

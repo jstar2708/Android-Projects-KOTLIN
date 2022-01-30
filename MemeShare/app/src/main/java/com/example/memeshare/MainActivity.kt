@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 // Request a string response from the provided URL.
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url, null,
-            Response.Listener { response ->
+            { response ->
                 val url = response.getString("url");
                 Glide.with(this).load(url).listener(object: RequestListener<Drawable>{
                     override fun onLoadFailed(
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }).into(findViewById(R.id.meme_image_view))
             },
-            Response.ErrorListener { })
+            { })
 
 
             MySingletonClass.getInstance(this)?.addRequest(jsonObjectRequest)
