@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentNutrients">
+
+    <ProgressBar
+        android:id="@+id/progressBarNutrients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/nutritionHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nutritionFacts"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alegreya"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/nutritionHeading"
+        android:id="@+id/nutritionSecondaryHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nutrientName"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:textStyle="bold|italic"
+            android:text="@string/nutritionName"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/nutrientQuantity"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/alegreya"
+            android:textStyle="bold|italic"
+            android:text="@string/quantity"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/nutrientUnit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/unit"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/nutritionSecondaryHeading"
+        android:id="@+id/nutrientsRecyclerView"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

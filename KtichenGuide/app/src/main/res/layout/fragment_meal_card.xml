@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMealCard">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mealCardHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:text="@string/mealCard"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/mealCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mealCardHeading"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya"
+                android:textStyle="bold|italic"
+                android:text="@string/summary"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/summaryDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_800"
+                android:layout_below="@id/summary"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/average" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

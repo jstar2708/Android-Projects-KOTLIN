@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/health.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/ic_launcher_background.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/likes.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/tick.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/activity_recipe_data.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_blank2.xml" value="0.1" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_instructions_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_meal_card.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_meal_card_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_nutrients.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_nutrients_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_recipe.xml" value="0.22" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/fragment_recipe_info.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/nutrients_recycler_layout.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/nutrients_view.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/recipe_layout.xml" value="0.22" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/recipe_recycler_view_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/tab_layout.xml" value="0.1308876811594203" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

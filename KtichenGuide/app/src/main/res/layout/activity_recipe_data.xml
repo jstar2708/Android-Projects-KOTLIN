@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecipeData">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutRecipeData"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mealCardTabItem"
+            android:layout_width="wrap_content"
+            app:tabSelectedTextColor="@color/red_A700"
+            android:layout_height="wrap_content"
+            android:text="@string/mealCard"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/instructionsTabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/red_A700"
+            android:text="@string/RecipeInfo"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/nutrientsTabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/red_A700"
+            android:text="@string/nutrients"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerRecipeData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

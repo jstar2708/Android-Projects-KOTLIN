@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/searchEditView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_recipe"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:src="@mipmap/search_icon"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarMainActivity"
+        android:layout_centerInParent="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"/>
+
+</RelativeLayout>
