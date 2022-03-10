@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Prakash</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="_91">+91</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="next">next</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="we_need_to_send_otp_to_authenticate_your_number">We need to send OTP to authenticate your number</string>
+    <string name="otp">OTP</string>
+    <string name="please_enter_the_otp_sent_to_your_number">Please enter the otp sent to your number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="welcome">Welcome</string>
+    <string name="add_a_complaint">Add a complaint</string>
+    <string name="name_With_Col">Name : </string>
+    <string name="phone_number">Phone number</string>
+    <string name="hsn_code">HSN CODE</string>
+    <string name="enter_hsn_code_if_possible">Enter HSN CODE if possible</string>
+    <string name="address">Address</string>
+    <string name="enter_address_of_street_light">Enter address of street light</string>
+    <string name="mention_any_landmark_near_street_light">Mention any landmark near the street light</string>
+    <string name="complaint">Complaint</string>
+    <string name="location">Location</string>
+    <string name="street_light">Street Light</string>
+    <string name="manual">Dear user, \n\n\n This is a guide for you, to how to use this app. First place your phone in 10m range of the non-functional street light. On clicking the next button you will see a google maps interface.Now inorder for the technician to get exact location, wait for 1 minute until your location stabilizes. After this, you need to click the gps button on the top right corner of the app to retrieve exact coordinates.Please ensure that the location you provide is correct.Now click on the location button to move to the complaint page.In the complaint page you will asked to upload an image of the non-functional street light for which you want to complain. Ensure that the image you click is of an street light only. Now if you see any code on the street light, then mention it in the HSN code column. Also try to mention any landmark near the street light so that the technician can locate it easily.Click on the complaint button to register your complaint.</string>
+    <string name="verify">Verify</string>
+</resources>

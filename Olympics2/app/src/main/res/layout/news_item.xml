@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="50dp">
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ice_skating"
+            android:scaleType="centerCrop"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/articleTitle"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            tools:text="Court cites lab delay in ruling allowing Kamila Valieva to skate at Olympics"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/articleImage"/>
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/articleDescription"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/articleTitle"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Why was Kamila Valieva allowed to skate at the Olympics after a positive doping test? The court that made the ruling just explained its decision."/>
+
+        <TextView
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/articleAuthor"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/articleDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="Associated Press"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/articleDate"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/articleDescription"
+            android:layout_marginStart="10dp"
+            tools:text="21 Jan 2022"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807359279375",
+    "project_id": "olympics-fbb5a",
+    "storage_bucket": "olympics-fbb5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807359279375:android:9a759ba04ab7ab18158e7a",
+        "android_client_info": {
+          "package_name": "com.example.olympics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807359279375-nek3jlk0io6deehlgotfqi426ns5v7f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFs_QV-J8Lu0NkBR6daZItOzymlXm5Cyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807359279375-nek3jlk0io6deehlgotfqi426ns5v7f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

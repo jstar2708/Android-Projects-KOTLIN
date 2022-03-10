@@ -7,6 +7,7 @@
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/health.xml" value="0.128" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/ic_launcher_background.xml" value="0.128" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/likes.xml" value="0.128" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/my_splash_screen.xml" value="0.128" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/drawable/tick.xml" value="0.128" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/activity_recipe_data.xml" value="0.1308876811594203" />
@@ -23,6 +24,7 @@
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/nutrients_view.xml" value="0.1308876811594203" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/recipe_layout.xml" value="0.22" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/recipe_recycler_view_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/splash_screen.xml" value="0.1308876811594203" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/layout/tab_layout.xml" value="0.1308876811594203" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Android Projects Kotlin/KtichenGuide/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />

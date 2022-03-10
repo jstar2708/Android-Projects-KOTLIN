@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navChats"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/chats" />
+        <item
+            android:id="@+id/navGlance"
+            android:icon="@drawable/ic_baseline_motion_glance_on_24"
+            android:title="@string/glance" />
+        <item
+            android:id="@+id/navCalls"
+            android:icon="@drawable/ic_baseline_call_24"
+            android:title="@string/calls" />
+    </group>
+</menu>

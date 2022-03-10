@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/chat_background"
+    android:layout_height="match_parent"
+    tools:context=".ChatsDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amber_700">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backButtonChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/profilePicChats"
+                app:layout_constraintLeft_toRightOf="@id/backButtonChats"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/man"/>
+
+            <TextView
+                android:id="@+id/otherUserNameChats"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                tools:text="Jaideep Kumar"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintLeft_toRightOf="@id/profilePicChats"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/callsChat"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/telephone_icon"
+                app:layout_constraintLeft_toRightOf="@id/otherUserNameChats"               app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/videoCallChat"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/video_call_icon"
+                app:layout_constraintLeft_toRightOf="@id/callsChat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chatToolbar"
+        android:layout_above="@id/linear"
+        android:id="@+id/chatsRecyclerView"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chatsEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chats_edittext_shape"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:shadowColor="@color/browser_actions_bg_grey"
+            android:elevation="500dp"
+            android:hint="@string/message"
+            android:layout_weight="5"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:elevation="500dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_c_round"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
