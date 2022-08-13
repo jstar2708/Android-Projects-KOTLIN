@@ -25,4 +25,37 @@
     <string name="street_light">Street Light</string>
     <string name="manual">Dear user, \n\n\n This is a guide for you, to how to use this app. First place your phone in 10m range of the non-functional street light. On clicking the next button you will see a google maps interface.Now inorder for the technician to get exact location, wait for 1 minute until your location stabilizes. After this, you need to click the gps button on the top right corner of the app to retrieve exact coordinates.Please ensure that the location you provide is correct.Now click on the location button to move to the complaint page.In the complaint page you will asked to upload an image of the non-functional street light for which you want to complain. Ensure that the image you click is of an street light only. Now if you see any code on the street light, then mention it in the HSN code column. Also try to mention any landmark near the street light so that the technician can locate it easily.Click on the complaint button to register your complaint.</string>
     <string name="verify">Verify</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="register">Register</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="appname_hindi">प्रकाश</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="go_for_sign_up">Go for sign up</string>
+    <string name="password">Password</string>
+    <string name="set_password">Set Password</string>
+    <string name="gender">Gender</string>
+    <string name="number">Number</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="user_manual">User Manual</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="notify_defected_street_light">Notify defected street light</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log out</string>
+    <string name="manage">Manage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_complaint">Register Complaint</string>
 </resources>

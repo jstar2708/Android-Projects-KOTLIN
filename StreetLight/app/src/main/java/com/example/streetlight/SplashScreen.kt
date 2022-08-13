@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.streetlight.authentication.OtpLoginActivity
+import com.example.streetlight.authentication.OtpSignUp
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +15,7 @@ class SplashScreen : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this, OTPSignUp::class.java)
+            val intent = Intent(this, NavigationActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

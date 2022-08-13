@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "688016477426",
+    "firebase_url": "https://firstchat-86bd2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "firstchat-86bd2",
+    "storage_bucket": "firstchat-86bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688016477426:android:748c5c282f2d0806b3546b",
+        "android_client_info": {
+          "package_name": "com.example.firstchat2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688016477426-fo5dv27qf1c77gnj7uav5li78b4r19m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firstchat2",
+            "certificate_hash": "14c6cb46ea0ee6f450e93e667b06275f054161c0"
+          }
+        },
+        {
+          "client_id": "688016477426-jh39jehn7nobgr9s06scnlidfma8k2b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj1Qv8V0DEe4LVT5q44gvx8H-_UPPZSLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688016477426-jh39jehn7nobgr9s06scnlidfma8k2b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

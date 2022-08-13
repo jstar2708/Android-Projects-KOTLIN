@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ratingAscending"
+        android:title="@string/rating_ascending"/>
+    <item
+        android:id="@+id/ratingDescending"
+        android:title="@string/rating_descending"/>
+
+    <item
+        android:id="@+id/maxCustomers"
+        android:title="@string/customer_count"/>
+
+</menu>

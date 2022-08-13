@@ -112,7 +112,7 @@ class SignInActivity : AppCompatActivity() {
                     Log.d("TAG", "signInWithCredential:success")
                     val user = auth.currentUser
 
-                    val users: Users  = Users()
+                    val users: Users = Users()
                     users.setUserId(user?.uid.toString())
                     users.setUserName(user?.displayName.toString())
                     users.setProfilePic(user?.photoUrl.toString())

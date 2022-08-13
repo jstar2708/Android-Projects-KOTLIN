@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:menuCategory="secondary">
+        <item
+            android:id="@+id/navChats"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/chats"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/navGlance"
+            android:icon="@drawable/ic_baseline_motion_photos_on_24"
+            android:title="@string/glance"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/navCalls"
+            android:icon="@drawable/ic_baseline_call_24"
+            android:title="@string/calls"
+            android:menuCategory="secondary"/>
+    </group>
+
+    <item
+        android:menuCategory="secondary"
+        android:title="">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/navSettings"
+                    android:title="@string/settings"
+                    android:icon="@drawable/ic_baseline_settings_24"/>
+                <item
+                    android:id="@+id/navLogOut"
+                    android:title="@string/log_out"
+                    android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navChats">
+
+    <fragment
+        android:id="@+id/navChats"
+        android:name="com.example.firstchat2.ui.ChatsFragment"
+        android:label="@string/chats"
+        tools:layout="@layout/fragment_chats" />
+
+    <fragment
+        android:id="@+id/navGlance"
+        android:name="com.example.firstchat2.ui.GlanceFragment"
+        android:label="@string/glance"
+        tools:layout="@layout/fragment_glance" />
+
+    <fragment
+        android:id="@+id/navCalls"
+        android:name="com.example.firstchat2.ui.CallsFragment"
+        android:label="@string/calls"
+        tools:layout="@layout/fragment_calls" />
+
+    <fragment
+        android:id="@+id/navSettings"
+        android:name="com.example.firstchat2.ui.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/navLogOut"
+        android:name="com.example.firstchat2.ui.LogOutFragment"
+        android:label="@string/log_out"
+        tools:layout="@layout/fragment_log_out"/>
+</navigation>

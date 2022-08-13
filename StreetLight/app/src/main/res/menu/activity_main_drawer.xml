@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_userManual"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_text_snippet_24"
+            android:title="@string/user_manual" />
+        <item
+            android:id="@+id/nav_complaint"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_report_problem_24"
+            android:title="@string/register_complaint" />
+        <item
+            android:id="@+id/nav_rewards"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"
+            android:title="@string/my_rewards" />
+    </group>
+
+    <item android:title="@string/manage"
+        android:menuCategory="secondary">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:menuCategory="secondary"
+                    android:title="@string/settings"
+                    android:icon="@drawable/ic_baseline_settings_24"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:menuCategory="secondary"
+                    android:title="@string/log_out"
+                    android:icon="@drawable/ic_baseline_app_registration_24"/>
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

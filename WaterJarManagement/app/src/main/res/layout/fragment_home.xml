@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cyan_A200"
+    tools:context=".customer.navigation.ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:text="@string/sellers"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bungee"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:src="@drawable/seller"
+            android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_drawable">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sortButton"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="15dp"
+                android:layout_height="60dp"
+                android:text="@string/sort"
+                android:textSize="13sp"
+                android:backgroundTint="@color/white"
+                android:elevation="500dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <Button
+                android:id="@+id/priceButton"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="15dp"
+                android:layout_height="60dp"
+                android:textSize="13sp"
+                android:elevation="500dp"
+                android:text="@string/price"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="5dp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_downward_24"
+                android:background="@color/white"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:elevation="500dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/emptyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_sellers_found"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/seller_layout"
+                android:layout_marginBottom="20dp"/>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

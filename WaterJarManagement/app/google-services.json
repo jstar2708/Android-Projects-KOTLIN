@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "95550172725",
+    "project_id": "waterjarmanagement",
+    "storage_bucket": "waterjarmanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95550172725:android:4db07caa392ccf9b660b7c",
+        "android_client_info": {
+          "package_name": "com.example.waterjarmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95550172725-p8q8l03vjlf859qspv80uou39cvkivru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterjarmanagement",
+            "certificate_hash": "14c6cb46ea0ee6f450e93e667b06275f054161c0"
+          }
+        },
+        {
+          "client_id": "95550172725-35slvks76foen6pahb637uiul05mttfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOsWTTyXBRHr5EcjRQ4kwjtNVDQZH3sx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95550172725-35slvks76foen6pahb637uiul05mttfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
