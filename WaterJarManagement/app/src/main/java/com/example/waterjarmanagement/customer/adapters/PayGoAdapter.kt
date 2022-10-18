@@ -18,7 +18,8 @@ class PayGoAdapter(private val listener: OnPayGoItemClick): RecyclerView.Adapter
         val view = LayoutInflater.from(parent.context).inflate(R.layout.payasyougo_layout, parent, false)
         val holder = PayGoViewHolder(view)
         holder.itemView.setOnClickListener {
-            listener.onClickPayGoOrder(orderList[holder.adapterPosition].getSellerId())
+            listener.onClickPayGoOrder(orderList[holder.adapterPosition].getSellerId(), orderList[holder.adapterPosition].getQuantity()
+            , orderList[holder.adapterPosition].getJarPrice(), holder.adapterPosition)
         }
         return holder
     }
@@ -61,5 +62,5 @@ class PayGoViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 }
 
 interface OnPayGoItemClick{
-    fun onClickPayGoOrder(sellerId: String)
+    fun onClickPayGoOrder(sellerId: String, quantity: Int, jarPrice: Int, index: Int)
 }

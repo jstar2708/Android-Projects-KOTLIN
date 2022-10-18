@@ -4,6 +4,8 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+
+
 android {
     compileSdk 32
 
@@ -72,6 +74,12 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+
+    //Razor Pay
+    implementation 'com.razorpay:checkout:1.6.24'
+
+    //Lottie animation
+    implementation "com.airbnb.android:lottie:5.2.0"
 
 
 }

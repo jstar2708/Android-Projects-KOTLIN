@@ -1,6 +1,7 @@
 package com.example.waterjarmanagement.customer.navigation.ui.home
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,10 +13,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.waterjarmanagement.R
+import com.example.waterjarmanagement.customer.OrderActivity
 import com.example.waterjarmanagement.customer.adapters.OnSellerItemClick
 import com.example.waterjarmanagement.customer.adapters.SellersListAdapter
 import com.example.waterjarmanagement.databinding.FragmentHomeBinding
 import com.example.waterjarmanagement.seller.model.Seller
+import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment(), OnSellerItemClick {
 
@@ -93,12 +96,15 @@ class HomeFragment : Fragment(), OnSellerItemClick {
     }
 
     private fun handleToast() {
-        Toast.makeText(requireContext(), "Error while retrieving sellers list", Toast.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, "Error while retrieving sellers list", Snackbar.LENGTH_LONG).show()
     }
 
 
     override fun onClick(seller: Seller) {
-
+        val intent = Intent(requireActivity(), OrderActivity::class.java)
+        intent.putExtra("sellerId", seller.getUserId())
+        intent.putExtra("jarPrice", seller.getJarPrice())
+        startActivity(intent)
     }
 
     private fun ifListEmpty(){

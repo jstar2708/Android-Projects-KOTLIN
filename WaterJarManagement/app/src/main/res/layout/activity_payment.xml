@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.PaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        android:background="@color/cyan_A200"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Payment\n\u20B91170 "
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="32sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:src="@drawable/money_jpg"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/ll"
+        android:layout_above="@id/payUsingRazorPay"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_summary"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_details"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="19sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/company_name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Pure Water Jars"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/owner_name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/ownerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Megha Dubey"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/price_for_1_jar"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/priceForOneJar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="45"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/contactNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="+91 6262652322"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_details"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="19sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Jaideep Kumar Singh"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delivery_address"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="H236 Nanak Nagar Manegaon Ranjhi Jabalpur Madhya Pradesh 482005"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/jar_quantity"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/jarQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="30"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/amount_to_pay"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/amountToPay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="1170"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payUsingRazorPay"
+        android:layout_below="@id/ll"
+        app:lottie_autoPlay="false"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/success"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/failure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payUsingRazorPay"
+        android:layout_below="@id/ll"
+        app:lottie_autoPlay="false"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/failure_animation"
+        />
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/payUsingRazorPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_using_razor_pay"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>

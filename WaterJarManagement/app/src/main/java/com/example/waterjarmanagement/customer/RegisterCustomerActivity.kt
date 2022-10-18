@@ -19,6 +19,7 @@ import com.example.waterjarmanagement.customer.models.Customer
 import com.example.waterjarmanagement.customer.navigation.CustomerNavigationActivity
 import com.example.waterjarmanagement.databinding.ActivityRegisterCustomerBinding
 import com.example.waterjarmanagement.customer.view_models.RegisterCustomerViewModel
+import com.google.android.material.snackbar.Snackbar
 
 class RegisterCustomerActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
 
@@ -35,6 +36,7 @@ class RegisterCustomerActivity : AppCompatActivity(), AdapterView.OnItemSelected
 
         if(isPhoneNumberVerified == "T"){
             registerCustomerModel.registerCustomer(customer, true)
+            progressDialog.dismiss()
         }
         else{
             registerCustomerModel.registerCustomer(customer, false)
@@ -168,7 +170,7 @@ class RegisterCustomerActivity : AppCompatActivity(), AdapterView.OnItemSelected
             || binding.pinCodeEditText.editText?.text?.length != 6 || binding.passwordEditText.editText?.text?.length != 8
             || binding.spinnerCity.selectedItem == "Select your city"){
 
-            Toast.makeText(this, "Fill complete details", Toast.LENGTH_SHORT).show()
+            Snackbar.make(binding.root, "Fill complete details", Snackbar.LENGTH_LONG).show()
             progressDialog.dismiss()
         }
         else{
@@ -192,7 +194,7 @@ class RegisterCustomerActivity : AppCompatActivity(), AdapterView.OnItemSelected
             2-> "Registered successfully"
             else-> "Error while registering"
         }
-        Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, str, Snackbar.LENGTH_LONG).show()
     }
 
     private fun handleAction(){

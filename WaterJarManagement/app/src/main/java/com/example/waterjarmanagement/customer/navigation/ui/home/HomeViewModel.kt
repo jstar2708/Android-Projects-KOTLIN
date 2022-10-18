@@ -17,9 +17,9 @@ class HomeViewModel : ViewModel() {
     private val database: FirebaseDatabase = FirebaseDatabase.getInstance("https://waterjarmanagement-default-rtdb.asia-southeast1.firebasedatabase.app/")
 
     fun getSellers(){
-        val arrayList: ArrayList<Seller> = ArrayList()
         database.reference.child("Seller").addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+                val arrayList: ArrayList<Seller> = ArrayList()
                 snapshot.children.forEach {
                     it.getValue(Seller::class.java)?.let { it1 -> arrayList.add(it1) }
                 }

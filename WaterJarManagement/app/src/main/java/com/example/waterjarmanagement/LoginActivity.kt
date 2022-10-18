@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.waterjarmanagement.customer.navigation.CustomerNavigationActivity
 import com.example.waterjarmanagement.databinding.ActivityLoginBinding
 import com.example.waterjarmanagement.seller.navigation.SellerNavigationActivity
+import com.google.android.material.snackbar.Snackbar
 
 class LoginActivity : AppCompatActivity() {
 
@@ -38,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginButton.setOnClickListener {
             if(binding.emailEditText.editText?.text.isNullOrEmpty() || binding.passwordEditText.editText?.text.isNullOrEmpty()){
-                Toast.makeText(this, "Please fill all details", Toast.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Please fill all details correctly", Snackbar.LENGTH_LONG).show()
             }
             else{
                 loginViewModel.signIn(this, binding.emailEditText.editText?.text.toString(), binding.passwordEditText.editText?.text.toString())

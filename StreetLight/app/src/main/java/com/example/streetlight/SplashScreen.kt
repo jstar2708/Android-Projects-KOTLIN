@@ -15,7 +15,7 @@ class SplashScreen : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this, NavigationActivity::class.java)
+            val intent = Intent(this, OtpSignUp::class.java)
             startActivity(intent)
             finish()
         }, 3000)

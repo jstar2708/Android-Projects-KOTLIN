@@ -2,15 +2,19 @@ package com.example.waterjarmanagement.customer.navigation.ui.dashboard
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
-import android.opengl.Visibility
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.waterjarmanagement.customer.PaymentActivity
 import com.example.waterjarmanagement.customer.adapters.OnOrderViewClicked
 import com.example.waterjarmanagement.customer.adapters.OnPayGoItemClick
 import com.example.waterjarmanagement.customer.adapters.OrderAdapter
@@ -22,7 +26,23 @@ class DashboardFragment : Fragment(), OnOrderViewClicked, OnPayGoItemClick {
     private var _binding: FragmentDashboardBinding? = null
     private lateinit var progressDialog: ProgressDialog
     private lateinit var dashboardViewModel: DashboardViewModel
+    private var index = 0
     private var type = 0
+    private val activityLauncher: ActivityResultLauncher<Intent> = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        when (it.resultCode) {
+            1 -> {
+                val order = dashboardViewModel.orderList.value?.removeAt(index)
+                dashboardViewModel.updateMonthlyOrder(order?.getOrderId().toString(), order?.getSellerId().toString())
+            }
+            2 -> {
+                val order = dashboardViewModel.payGoOrderList.value?.removeAt(index)
+                dashboardViewModel.updatePayGoOrder(order?.getOrderId().toString(), order?.getSellerId().toString())
+            }
+            else -> {
+                Toast.makeText(context, "Payment Failed", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -56,12 +76,12 @@ class DashboardFragment : Fragment(), OnOrderViewClicked, OnPayGoItemClick {
         })
 
         dashboardViewModel.payGoOrderList.observe(requireActivity(), Observer {
-            dashboardViewModel.payGoOrderList.value?.let { it -> payGoAdapter.updateList(it) }
+            ifPayGoOrderListIsEmpty()
+            dashboardViewModel.payGoOrderList.value?.let { it2 -> payGoAdapter.updateList(it2) }
             progressDialog.dismiss()
         })
 
         dashboardViewModel.getOrdersList()
-
 
         dashboardViewModel.getPayGoOrdersList()
 
@@ -101,10 +121,22 @@ class DashboardFragment : Fragment(), OnOrderViewClicked, OnPayGoItemClick {
         }
     }
 
-    override fun onClickPayGoOrder(sellerId: String) {
-
+    override fun onClickPayGoOrder(sellerId: String, quantity: Int, jarPrice: Int, value: Int) {
+        val intent = Intent(requireActivity(), PaymentActivity::class.java)
+        intent.putExtra("quantity", quantity)
+        intent.putExtra("priceForJar", jarPrice)
+        intent.putExtra("sellerId", sellerId)
+        intent.putExtra("type", type)
+        index = value
+        activityLauncher.launch(intent)
     }
-    override fun onClickOrder(sellerId: String) {
-
+    override fun onClickOrder(sellerId: String, jarPrice: Int, value: Int) {
+        val intent = Intent(requireActivity(), PaymentActivity::class.java)
+        intent.putExtra("quantity", 30)
+        intent.putExtra("priceForJar", jarPrice)
+        intent.putExtra("sellerId", sellerId)
+        intent.putExtra("type", type)
+        index = value
+        activityLauncher.launch(intent)
     }
 }

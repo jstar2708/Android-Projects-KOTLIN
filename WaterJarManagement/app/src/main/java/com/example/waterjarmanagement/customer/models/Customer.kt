@@ -7,8 +7,6 @@ class Customer {
     private lateinit var userId: String
     private lateinit var address: String
     private lateinit var name: String
-    var sellers: ArrayList<Jars> = ArrayList()
-    var payGoOrders: ArrayList<PayGo> = ArrayList()
     private var phoneNumber: Long = 0
     private var pinCode: Int = 0
     private lateinit var state: String
@@ -17,13 +15,11 @@ class Customer {
     constructor(){}
     constructor(
         city: String,
-        payGoOrders: ArrayList<PayGo>,
         password: String,
         email: String,
         userId: String,
         address: String,
         name: String,
-        sellers: ArrayList<Jars>,
         phoneNumber: Long,
         pinCode: Int,
         state: String,
@@ -34,11 +30,9 @@ class Customer {
         this.userId = userId
         this.address = address
         this.name = name
-        this.sellers = sellers
         this.phoneNumber = phoneNumber
         this.pinCode = pinCode
         this.state = state
-        this.payGoOrders = payGoOrders
     }
 
     fun getCity(): String{

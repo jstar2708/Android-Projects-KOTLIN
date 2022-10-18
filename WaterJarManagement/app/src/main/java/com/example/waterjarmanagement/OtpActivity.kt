@@ -5,10 +5,12 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import com.example.waterjarmanagement.databinding.ActivityOtpBinding
 import com.google.android.gms.common.internal.Objects
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
@@ -26,6 +28,8 @@ class OtpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOtpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
 
         binding.textView.text = "Enter verification code sent to\n +91" + intent.getStringExtra("phone")
 
@@ -54,7 +58,7 @@ class OtpActivity : AppCompatActivity() {
                 // 2 - Auto-retrieval. On some devices Google Play services can automatically
                 //     detect the incoming verification SMS and perform verification without
                 //     user action.
-                Toast.makeText(applicationContext, "Verification successful", Toast.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Verification success", Snackbar.LENGTH_LONG).show()
                 Log.e("", "onVerificationCompleted:$credential")
             }
 
@@ -63,7 +67,7 @@ class OtpActivity : AppCompatActivity() {
                 // for instance if the the phone number format is not valid.
                 Log.w("", "onVerificationFailed", e)
 
-                Toast.makeText(applicationContext, "Verification failed", Toast.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Verification failed", Snackbar.LENGTH_LONG).show()
                 val intent = Intent()
                 intent.putExtra("result", "F")
                 setResult(1, intent)
@@ -80,7 +84,7 @@ class OtpActivity : AppCompatActivity() {
                 verificationId: String,
                 token: PhoneAuthProvider.ForceResendingToken
             ) {
-                Toast.makeText(applicationContext, "Code sent", Toast.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Code sent", Snackbar.LENGTH_LONG).show()
                 // The SMS verification code has been sent to the provided phone number, we
                 // now need to ask the user to enter the code and then construct a credential
                 // by combining the code with a verification ID.
@@ -105,22 +109,26 @@ class OtpActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     auth.currentUser?.delete()
-                    Toast.makeText(this, "Correct OTP", Toast.LENGTH_SHORT).show()
+                    Snackbar.make(binding.root, "Incorrect Otp", Snackbar.LENGTH_LONG).show()
                     progressDialog.dismiss()
-                    val intent = Intent()
-                    intent.putExtra("result", "T")
-                    setResult(1, intent)
-                    finish()
+                    Handler().postDelayed({
+                        val intent = Intent()
+                        intent.putExtra("result", "T")
+                        setResult(1, intent)
+                        finish()
+                    }, 2000)
                 } else {
                     // Sign in failed, display a message and update the UI
                     Log.w("", "signInWithCredential:failure", task.exception)
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                        Toast.makeText(this, "Incorrect OTP", Toast.LENGTH_SHORT).show()
-                        val intent = Intent()
-                        intent.putExtra("result", "F")
-                        setResult(1, intent)
+                        Snackbar.make(binding.root, "Incorrect Otp", Snackbar.LENGTH_LONG).show()
                         progressDialog.dismiss()
-                        finish()
+                        Handler().postDelayed({
+                            val intent = Intent()
+                            intent.putExtra("result", "F")
+                            setResult(1, intent)
+                            finish()
+                        }, 2000)
                     }
                     // Update UI
                 }

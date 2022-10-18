@@ -12,11 +12,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.streetlight.R
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UserManual.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UserManual : Fragment() {
     private val LOCATION_PERMISSION_REQUEST = 1
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,11 +30,7 @@ class UserManual : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         * @return A new instance of fragment UserManual.
-         */
+
         fun newInstance() = UserManual()
 
     }

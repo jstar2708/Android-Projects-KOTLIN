@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaterJarManagement" >
         <activity
+            android:name=".customer.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.PaymentActivity"
+            android:exported="true" >
+        </activity>
+        <activity
             android:name=".seller.navigation.SellerNavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_seller_navigation" />

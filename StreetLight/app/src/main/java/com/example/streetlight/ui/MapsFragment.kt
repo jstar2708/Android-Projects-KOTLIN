@@ -43,7 +43,7 @@ class MapsFragment : Fragment() {
     private lateinit var mapFragment: SupportMapFragment
     private val LOCATION_PERMISSION_REQUEST = 1
     private var isGpsEnabled: Boolean = false
-    private var isNetworkEnabled = false;
+    private var isNetworkEnabled = false
     private lateinit var locationManager: LocationManager
     private lateinit var marker: MarkerOptions
 
@@ -156,6 +156,7 @@ class MapsFragment : Fragment() {
         }
     }
 
+    @Deprecated("Deprecated in Java")
     @SuppressLint("MissingPermission")
     override fun onRequestPermissionsResult(
         requestCode: Int,

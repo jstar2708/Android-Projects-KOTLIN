@@ -20,6 +20,7 @@ import com.example.waterjarmanagement.databinding.ActivityRegisterSellerBinding
 import com.example.waterjarmanagement.seller.model.Seller
 import com.example.waterjarmanagement.seller.navigation.SellerNavigationActivity
 import com.example.waterjarmanagement.seller.view_models.RegisterSellerViewModel
+import com.google.android.material.snackbar.Snackbar
 
 class RegisterSellerActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
@@ -170,7 +171,7 @@ class RegisterSellerActivity : AppCompatActivity(), AdapterView.OnItemSelectedLi
             || binding.cinEditText.editText?.text?.length != 21 || binding.spinnerCity.selectedItem == "Select your city"
         ) {
 
-            Toast.makeText(this, "Fill complete details", Toast.LENGTH_SHORT).show()
+            Snackbar.make(binding.root, "Fill all details correctly", Snackbar.LENGTH_LONG).show()
             progressDialog.dismiss()
         } else {
             seller.setAddress(binding.addressEditText.editText?.text.toString())
@@ -197,7 +198,7 @@ class RegisterSellerActivity : AppCompatActivity(), AdapterView.OnItemSelectedLi
             2-> "Registered successfully"
             else-> "Error while registering"
         }
-        Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
+        Snackbar.make(binding.root, str, Snackbar.LENGTH_LONG).show()
     }
 
     private fun handleAction(){

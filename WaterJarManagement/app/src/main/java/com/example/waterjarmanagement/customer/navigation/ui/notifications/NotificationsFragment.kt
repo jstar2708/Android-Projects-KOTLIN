@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.waterjarmanagement.LoginActivity
 import com.example.waterjarmanagement.databinding.FragmentNotificationsBinding
+import com.google.android.material.snackbar.Snackbar
 
 
 class NotificationsFragment : Fragment() {
@@ -60,10 +62,12 @@ class NotificationsFragment : Fragment() {
         })
         dialog.setPositiveButton("Yes", DialogInterface.OnClickListener { Dialog, which ->
             notificationsViewModel.signOut()
-            Toast.makeText(requireContext(), "User logged out", Toast.LENGTH_SHORT).show()
-            val intent = Intent(requireContext(), LoginActivity::class.java)
-            startActivity(intent)
-            requireActivity().finish()
+            Snackbar.make(binding.root, "User logged out", Snackbar.LENGTH_LONG).show()
+            Handler().postDelayed({
+                val intent = Intent(requireContext(), LoginActivity::class.java)
+                startActivity(intent)
+                requireActivity().finish()
+            }, 2000)
         })
 
         binding.logOut.setOnClickListener {
@@ -79,8 +83,8 @@ class NotificationsFragment : Fragment() {
 
     private fun handleToast(value: Int) {
         when(value){
-            1-> Toast.makeText(requireContext(), "Profile Updated", Toast.LENGTH_SHORT).show()
-            2-> Toast.makeText(requireContext(), "Error", Toast.LENGTH_SHORT).show()
+            1-> Snackbar.make(binding.root, "Profile Updated", Snackbar.LENGTH_LONG).show()
+            2-> Snackbar.make(binding.root, "Error", Snackbar.LENGTH_LONG).show()
             else-> Unit
         }
     }

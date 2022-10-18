@@ -119,12 +119,30 @@
     <string name="state">State</string>
     <string name="update_profile">Update Profile</string>
     <string name="log_out">Log Out</string>
+    <string name="payment">Payment</string>
+    <string name="seller_details">Seller details</string>
+    <string name="seller_name">Seller Name</string>
+    <string name="customer_details">Customer details</string>
+    <string name="delivery_address">Delivery address</string>
+    <string name="jar_quantity">Jar Quantity</string>
+    <string name="pay_using_razor_pay">Pay using razor pay</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="order_type">Order type</string>
+    <string name="monthly_order">Monthly Orders</string>
+    <string name="pay_as_you_go_order">Pay as you go orders</string>
+    <string name="d">+</string>
+    <string name="ds">-</string>
+    <string name="zero">0</string>
+    <string name="confirm_order">Confirm order</string>
+    <string name="jars_nleft">Water Jars\nLeft</string>
+    <string name="customer_ncount">Customer\nCount</string>
+    <string name="total_orders">Total orders</string>
 
     // array for Andaman and Nicobar Islands
 
     <string-array name="andaman_nicobar_cities_array">
         <item>Select your city</item>
-        <item >Port Blair</item>
+        <item>Port Blair</item>
     </string-array>
 
 
@@ -132,109 +150,109 @@
 
     <string-array name="andhra_pradesh_cities_array">
         <item>Select your city</item>
-        <item >Adilabad</item>
-        <item >Adoni</item>
-        <item >Alwal</item>
-        <item >Anakapalle</item>
-        <item >Anantapur</item>
-        <item >Bapatla</item>
-        <item >Belampalli</item>
-        <item >Bhimavaram</item>
-        <item >Bhongir</item>
-        <item >Bobbili</item>
-        <item >Bodhan</item>
-        <item >Chilakalurupet</item>
-        <item >Chinna Chawk</item>
-        <item >Chirala</item>
-        <item >Chittur</item>
-        <item >Cuddapah</item>
-        <item >Dharmavaram</item>
-        <item >Dhone</item>
-        <item >Gaddiannaram</item>
-        <item >Gadwal</item>
-        <item >Gajuwaka</item>
-        <item >Gudivada</item>
-        <item >Gudur</item>
-        <item >Guntakal</item>
-        <item >Guntur</item>
-        <item >Hindupur</item>
-        <item >Hyderabad</item>
-        <item >Jagtial</item>
-        <item >Kadiri</item>
-        <item >Kagaznagar</item>
-        <item >Kakinada</item>
-        <item >Kallur</item>
-        <item >Kamareddi</item>
-        <item >Kapra</item>
-        <item >Karimnagar</item>
-        <item >Karnul</item>
-        <item >Kavali</item>
-        <item >Khammam</item>
-        <item >Kodar</item>
-        <item >Kondukur</item>
-        <item >Koratla</item>
-        <item >Kottagudem</item>
-        <item >Kukatpalle</item>
-        <item >Lalbahadur Nagar</item>
-        <item >Machilipatnam</item>
-        <item >Mahbubnagar</item>
-        <item >Malkajgiri</item>
-        <item >Mancheral</item>
-        <item >Mandamarri</item>
-        <item >Mangalagiri</item>
-        <item >Markapur</item>
-        <item >Miryalaguda</item>
-        <item >Nalgonda</item>
-        <item >Nandyal</item>
-        <item >Narasapur</item>
-        <item >Narasaraopet</item>
-        <item >Nellur</item>
-        <item >Nirmal</item>
-        <item >Nizamabad</item>
-        <item >Nuzvid</item>
-        <item >Ongole</item>
-        <item >Palakollu</item>
-        <item >Palasa</item>
-        <item >Palwancha</item>
-        <item >Patancheru</item>
-        <item >Piduguralla</item>
-        <item >Ponnur</item>
-        <item >Proddatur</item>
-        <item >Qutubullapur</item>
-        <item >Rajamahendri</item>
-        <item >Rajampet</item>
-        <item >Rajendranagar</item>
-        <item >Ramachandrapuram</item>
-        <item >Ramagundam</item>
-        <item >Rayachoti</item>
-        <item >Rayadrug</item>
-        <item >Samalkot</item>
-        <item >Sangareddi</item>
-        <item >Sattenapalle</item>
-        <item >Serilungampalle</item>
-        <item >Siddipet</item>
-        <item >Sikandarabad</item>
-        <item >Sirsilla</item>
-        <item >Srikakulam</item>
-        <item >Srikalahasti</item>
-        <item >Suriapet</item>
-        <item >Tadepalle</item>
-        <item >Tadepallegudem</item>
-        <item >Tadpatri</item>
-        <item >Tandur</item>
-        <item >Tanuku</item>
-        <item >Tenali</item>
-        <item >Tirupati</item>
-        <item >Tuni</item>
-        <item >Uppal Kalan</item>
-        <item >Vijayawada</item>
-        <item >Vinukonda</item>
-        <item >Visakhapatnam</item>
-        <item >Vizianagaram</item>
-        <item >Vuyyuru</item>
-        <item >Wanparti</item>
-        <item >Warangal</item>
-        <item >Yemmiganur</item>
+        <item>Adilabad</item>
+        <item>Adoni</item>
+        <item>Alwal</item>
+        <item>Anakapalle</item>
+        <item>Anantapur</item>
+        <item>Bapatla</item>
+        <item>Belampalli</item>
+        <item>Bhimavaram</item>
+        <item>Bhongir</item>
+        <item>Bobbili</item>
+        <item>Bodhan</item>
+        <item>Chilakalurupet</item>
+        <item>Chinna Chawk</item>
+        <item>Chirala</item>
+        <item>Chittur</item>
+        <item>Cuddapah</item>
+        <item>Dharmavaram</item>
+        <item>Dhone</item>
+        <item>Gaddiannaram</item>
+        <item>Gadwal</item>
+        <item>Gajuwaka</item>
+        <item>Gudivada</item>
+        <item>Gudur</item>
+        <item>Guntakal</item>
+        <item>Guntur</item>
+        <item>Hindupur</item>
+        <item>Hyderabad</item>
+        <item>Jagtial</item>
+        <item>Kadiri</item>
+        <item>Kagaznagar</item>
+        <item>Kakinada</item>
+        <item>Kallur</item>
+        <item>Kamareddi</item>
+        <item>Kapra</item>
+        <item>Karimnagar</item>
+        <item>Karnul</item>
+        <item>Kavali</item>
+        <item>Khammam</item>
+        <item>Kodar</item>
+        <item>Kondukur</item>
+        <item>Koratla</item>
+        <item>Kottagudem</item>
+        <item>Kukatpalle</item>
+        <item>Lalbahadur Nagar</item>
+        <item>Machilipatnam</item>
+        <item>Mahbubnagar</item>
+        <item>Malkajgiri</item>
+        <item>Mancheral</item>
+        <item>Mandamarri</item>
+        <item>Mangalagiri</item>
+        <item>Markapur</item>
+        <item>Miryalaguda</item>
+        <item>Nalgonda</item>
+        <item>Nandyal</item>
+        <item>Narasapur</item>
+        <item>Narasaraopet</item>
+        <item>Nellur</item>
+        <item>Nirmal</item>
+        <item>Nizamabad</item>
+        <item>Nuzvid</item>
+        <item>Ongole</item>
+        <item>Palakollu</item>
+        <item>Palasa</item>
+        <item>Palwancha</item>
+        <item>Patancheru</item>
+        <item>Piduguralla</item>
+        <item>Ponnur</item>
+        <item>Proddatur</item>
+        <item>Qutubullapur</item>
+        <item>Rajamahendri</item>
+        <item>Rajampet</item>
+        <item>Rajendranagar</item>
+        <item>Ramachandrapuram</item>
+        <item>Ramagundam</item>
+        <item>Rayachoti</item>
+        <item>Rayadrug</item>
+        <item>Samalkot</item>
+        <item>Sangareddi</item>
+        <item>Sattenapalle</item>
+        <item>Serilungampalle</item>
+        <item>Siddipet</item>
+        <item>Sikandarabad</item>
+        <item>Sirsilla</item>
+        <item>Srikakulam</item>
+        <item>Srikalahasti</item>
+        <item>Suriapet</item>
+        <item>Tadepalle</item>
+        <item>Tadepallegudem</item>
+        <item>Tadpatri</item>
+        <item>Tandur</item>
+        <item>Tanuku</item>
+        <item>Tenali</item>
+        <item>Tirupati</item>
+        <item>Tuni</item>
+        <item>Uppal Kalan</item>
+        <item>Vijayawada</item>
+        <item>Vinukonda</item>
+        <item>Visakhapatnam</item>
+        <item>Vizianagaram</item>
+        <item>Vuyyuru</item>
+        <item>Wanparti</item>
+        <item>Warangal</item>
+        <item>Yemmiganur</item>
     </string-array>
 
 
@@ -245,7 +263,6 @@
         <item>Select your city</item>
         <item>Itanagar</item>
     </string-array>
-
 
 
     //Array for Assam
@@ -269,7 +286,6 @@
         <item>Tezpur</item>
         <item>Tinsukia</item>
     </string-array>
-
 
 
     // Array for west bengal
@@ -423,7 +439,6 @@
         <item>Siwan</item>
         <item>Supaul</item>
     </string-array>
-
 
 
     // Array for Chandigarh
